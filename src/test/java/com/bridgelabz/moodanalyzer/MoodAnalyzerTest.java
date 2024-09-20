@@ -13,4 +13,10 @@ public class MoodAnalyzerTest extends TestCase {
             String msg="I am in sad mood";
             assertEquals("SAD",mood.analyze_mood(msg));
     }
+
+    @Test
+    public void in_any_mood_should_return_hapy(){
+        String msg="I am in Any Mood";
+        assertEquals("HAPPY",mood.analyze_mood(msg));
+    }
 }
